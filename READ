@@ -1,0 +1,27 @@
+# WSQ13.cpp
+#include <iostream>
+  using namespace std;
+
+  float grooooot(float x){
+
+    double e=x, a =0;
+
+    while (a!= e){
+        a =e;
+        e = (x/e +e)/2; 
+    }
+
+    return e;
+  }
+
+  int main(){
+
+    float x;
+
+    cout << "Introduce el número del cual necesitas la raís cuadrada. " << endl;
+    cin >> x;
+
+    cout << "La raíz cuadrada de "  << x << " es " << grooooot(x) << endl;
+
+    return 0;
+  }
